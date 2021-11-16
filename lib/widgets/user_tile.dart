@@ -3,7 +3,7 @@ import 'package:myapp/models/user.dart';
 
 class UserTile extends StatelessWidget {
   final User user;
-  UserTile(this.user);
+  const UserTile(this.user, {Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     final avatar = (user.avatarUrl == null || user.avatarUrl.isEmpty

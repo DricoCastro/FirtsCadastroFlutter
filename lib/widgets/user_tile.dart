@@ -7,7 +7,7 @@ class UserTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final avatar = (user.avatarUrl == null || user.avatarUrl.isEmpty
-        ? CircleAvatar(child: Image.asset('lib/assets/flutterImg.jpg'))
+        ? const CircleAvatar(child: Icon(Icons.person_sharp))
         : CircleAvatar(backgroundImage: NetworkImage(user.avatarUrl)));
     return ListTile(
         leading: avatar,
